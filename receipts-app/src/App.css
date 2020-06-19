@@ -2,37 +2,69 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-style: sans-serif;
+}
+.app-name{
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  margin: 50px auto;
+  text-align: center;
+}
+.create-new form{
+  display: block;
+  margin-top: 0em;
+}
+#new-search {
+  border: 3px solid black;
+  height: 20px;
+  width: 200px;
+  padding: 1px 2px;
+  color: -internal-light-dark-color(black, white);
+  display: inline-block;
+  text-align: start;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  flex-wrap:  wrap;
+}
+.receipt {
+  border: 1px solid coral;
+  padding: 1em;
+  margin: 1em;
+  flex: 1 0 250px;
+  max-width: 300px;
+}
+.receipt h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.rceipt h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+}
+.reciept span {
+  color: indigo;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
