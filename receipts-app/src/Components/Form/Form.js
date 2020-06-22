@@ -1,18 +1,20 @@
 import React from 'react';
 
-export default function Form() {
+const Form = (props) => {
+    return (
     <div className="search">
-        <div className="create-new">
-            <form>
-                <label htmlfor="new-serch">Search for a Receipt by Name</label>
+        <div>
+            <form onSubmit={props.handleSearch}>
+                <label htmlFor="new-search">Search for</label>
                 <br />
-                <input  type="text"
-                        placeholder="Search by Name"
-                        value={}
-                        id="new-search"/>
-                <input type="submit" />
+                <input type="text" placeholder="Search by Name" id="new-search" value={props.nameSearch}
+                onChange={props.handleInput}/> <br />
+                <input type="submit" className="submit-button"/>
             </form>
         </div>
 
     </div>
+    )
 } 
+
+export default Form;

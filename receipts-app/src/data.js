@@ -39,3 +39,4 @@ const receipts = [
      paid: false
    }
  ]
+export default receipts;

@@ -36,12 +36,24 @@ body {
   font: 400 13.3333px Arial;
 }
 
+
+input {
+  margin: 3px;
+}
+
+.submit-button {
+  margin: 5px;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
   flex-wrap:  wrap;
 }
+
+
 .receipt {
+  position: relative;
   border: 1px solid coral;
   padding: 1em;
   margin: 1em;
@@ -57,13 +69,34 @@ body {
   margin-inline-end: 0px;
   font-weight: bold;
 }
-.rceipt h4 {
+.receipt h4 {
   display: block;
   margin-block-start: 1.33em;
   margin-block-end: 1.33em;
 }
-.reciept span {
+.receipt p {
+  color: teal;
+}
+.order-summary {
   color: indigo;
+}
+.order-paid-for {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0 0.2em;
+  background-color: transparent;
+  transition: all 0.1s linear;
+}
+.order-paid-for.check_box {
+  background-color: rgba(49, 199, 106, 0.75);
+}
+.order-paid-for > p > .material-icons {
+  display: block;
+  font-size: 3em;
+  margin-bottom: 0.25em;
 }
 
 
