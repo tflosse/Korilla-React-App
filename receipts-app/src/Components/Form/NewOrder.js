@@ -16,7 +16,7 @@ const NewOrder = () => {
                 <input type="text" placeholder="Rice" /> <br />
                 <input type="text" placeholder="Sauce" /> 
                 <input type="text" placeholder="Drink" /> <br />
-                <h5 className="order cost"> Total cost of new order: $ ____ </h5>
+                <p className="order-cost"> Total cost of new order: $ ____ </p>
                 <input type="submit" className="submit-button"/>
             </form>
         </div>

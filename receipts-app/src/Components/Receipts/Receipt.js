@@ -17,7 +17,7 @@ const Receipt= (props) => {
         </div>
         <p>Order Total: $ <strong>{props.cost}</strong></p>
         <br />
-        {/* <Paid onPaidToggle={() => props.onPaidToggle()} isPaid={props.isPaid}/> */}
+        <Paid onPaidToggle={() => props.onPaidToggle()} isPaid={props.isPaid}/>
     </div>
     )
 } 

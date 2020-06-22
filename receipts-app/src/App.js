@@ -8,7 +8,7 @@ import './App.css';
 export default function App () {
   const [receiptList,setReceiptList] = useState(receipts);
   const [nameSearch,setNameSearch] = useState("");
-  // const [paid, setPaid] = useState([]);
+  const [paid, setPaid] = useState([]);
 
   const handleInput = event => {
       setNameSearch(event.target.value);
@@ -30,19 +30,25 @@ export default function App () {
       setNameSearch("");
   };
 
-// const handlePaidToggle = (receipt) => {
-//   const paidArray = [...paid];
-//   const 
-// }
+  const handlePaidToggle = receipt =>{
+    const paidArray = [...paid];
+    const receiptIndex = paidArray.indexOf(receipt);
+    if (receiptIndex > -1){
+      paidArray.splice(receiptIndex,1);
+    } else {
+      paidArray.push(receipt);
+    }
+    setPaid(paidArray);
+  };
 
   return (
     <div className="App">
-      <h1 className="app-name">Receipts Dashboard</h1>
+      <h1 className="app-name">Korilla Receipts</h1>
       <NewOrder />
       <Form handleInput={handleInput} handleSearch={handleSearch} nameSearch={nameSearch}/>
       <Receipts receipts={receiptList} 
-      // paid={paid}
-      // onPaidToggle={handlePaidToggle}
+      paid={paid}
+      onPaidToggle={handlePaidToggle}
       />
     </div>
   );
