@@ -44,8 +44,8 @@ export default function App () {
   return (
     <div className="App">
       <h1 className="app-name">Korilla Receipts</h1>
-      <NewOrder />
       <Form handleInput={handleInput} handleSearch={handleSearch} nameSearch={nameSearch}/>
+      <NewOrder />
       <Receipts receipts={receiptList} 
       paid={paid}
       onPaidToggle={handlePaidToggle}
