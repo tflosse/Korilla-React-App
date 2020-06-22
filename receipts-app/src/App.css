@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr 2fr 8fr;
+  grid-template-rows: 0.5fr 220px 3fr;
   grid-template-columns: 50% 50%;
   position: relative;
 }
@@ -11,7 +11,7 @@ body {
   background-image: url(https://images.unsplash.com/photo-1508955080361-a155a8773c13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -565px;
+  background-position-y: -200px;
 }
 
 .app-name {
@@ -65,7 +65,6 @@ input {
   margin: 3px;
   border: none;
   border-radius: 2px;
-
 }
 
 .submit-button {
@@ -94,6 +93,8 @@ input {
   margin: 1em;
   flex: 1 0 250px;
   max-width: 300px;
+  height: 35vh;
+  min-height: 345px;
 }
 .receipt h2 {
   display: block;
